@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 :root {
@@ -26,7 +27,6 @@ p {
 body {
   margin: 0;
   padding: 0;
-  outline: none;
   background-color: var(--secondary-color);
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.06rem;
