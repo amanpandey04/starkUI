@@ -49,8 +49,10 @@ p {
   padding: 0 1rem;
 }
 
-iframe {
-  margin: 1rem 0;
+.token {
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 /* sidebar */
