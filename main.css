@@ -1,0 +1,88 @@
+/* fonts import */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* soft reset */
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* root variables */
+
+:root {
+  --primary-color: #faeee7;
+  --secondary-color: #fffffe;
+  --tertiary-color: #ff8ba7;
+  --heading-color: #33272a;
+  --para-color: #594a4e;
+  --nav-height: 4rem;
+}
+
+/* display changes */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-select {
+  user-select: none;
+}
+
+/* button */
+
+.btn {
+  display: inline-block;
+  margin: 0.8rem 0;
+  padding: 0.4rem 0.6rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.12rem solid var(--tertiary-color);
+  transition: all 0.4s ease 0s;
+}
+
+.btn-primary {
+  background: var(--tertiary-color);
+}
+
+.btn-secondary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color);
+  border-color: var(--tertiary-color);
+}
+
+.btn-secondary:hover {
+  box-shadow: inset 0 0 0 0.1rem var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+/* navigation bar */
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--primary-color);
+  padding: 0 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
